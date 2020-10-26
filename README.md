@@ -1,6 +1,8 @@
 # RNA-seq analysis of SMG5-SMG7 in NMD
 ___
-Code and scripts for the RNA-seq analysis of the project: _Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7_
+Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__
+
+<img align="center" src="https://github.com/boehmv/SMG5-SMG7/blob/main/2FA.png?raw=true" height="300">
 
 ## Features / Requirements
 * Complete analysis of RNA-seq data (ArrayExpress: [E-MTAB-9330](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9330/); provided in FASTQ format), mapped to Gencode v33 / GRCh38.primary_assembly supplemented with SIRVomeERCCome (from Lexogen) using STAR, followed by transcript quantification using Salmon in mapping-based mode with a decoy-aware transcriptome index, finished with analyses of differential gene expression (DGE) via DESeq2, differential transcript usage (DTU) via IsoformSwitchAnalyzeR, alternative splicing (AS) via LeafCutter and intron retention (IR) via IRFinder.
@@ -37,6 +39,9 @@ Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions)
 
 ## Individual scripts
 The specialized scripts called by the main CRSA_V006.sh script can be found [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/Tools). 
+
+## Feedback / Questions
+Feedback is welcome! For any question, please email: boehmv@uni.koeln.de or [create an issue](https://github.com/boehmv/SMG5-SMG7/issues)
 
 ## Citation
 Volker Boehm, Sabrina Kueckelmann, Jennifer V. Gerbracht, Thiago Britto-Borges, Janine Altmüller, Christoph Dieterich and Niels H. Gehring (2020) __Nonsense-mediated mRNA decay relies on “two-factor authentication” by SMG5-SMG7__. 

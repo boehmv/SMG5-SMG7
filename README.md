@@ -2,7 +2,7 @@
 ___
 Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__
 
-<img align="center" src="https://github.com/boehmv/SMG5-SMG7/blob/main/2FA.png?raw=true" height="300">
+<img src="https://github.com/boehmv/SMG5-SMG7/blob/main/2FA.png?raw=true" max-height="300">
 
 ## Features / Requirements
 * Complete analysis of RNA-seq data (ArrayExpress: [E-MTAB-9330](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9330/); provided in FASTQ format), mapped to Gencode v33 / GRCh38.primary_assembly supplemented with SIRVomeERCCome (from Lexogen) using STAR, followed by transcript quantification using Salmon in mapping-based mode with a decoy-aware transcriptome index, finished with analyses of differential gene expression (DGE) via DESeq2, differential transcript usage (DTU) via IsoformSwitchAnalyzeR, alternative splicing (AS) via LeafCutter and intron retention (IR) via IRFinder.
@@ -13,7 +13,7 @@ Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mR
   STAR   --runMode genomeGenerate   --runThreadN 15   --genomeDir /home/volker/reference/gencode.v33.SIRVomeERCCome   --genomeFastaFiles /home/volker/reference/Gencode/GRCh38.primary.SIRVomeERCCome.fa      --sjdbGTFfile /home/volker/reference/Gencode/gencode.v33.SIRVomeERCCome.annotation.gtf   --sjdbOverhang 99
   ```
   * [Alfred](https://github.com/tobiasrausch/alfred) - version v0.2.1 was used for the analyses
-  * [samtools](http://www.htslib.org/) - ersion 1.9 (using htslib 1.9) was used for the analyses
+  * [samtools](http://www.htslib.org/) - version 1.9 (using htslib 1.9) was used for the analyses
   * [IGV tools](http://software.broadinstitute.org/software/igv/download) - version 2.8.0 was used for the analyses - make sure you have the gencode.v33.SIRVomeERCCome.chrom.sizes file (can be found [here](https://uni-koeln.sciebo.de/s/RFID1U3YYBZmkkE)) located in /PATH/TO/IGV_2.8.0/lib/genomes
   * [Salmon](https://github.com/COMBINE-lab/salmon) - version v1.3.0 was used for the analyses - with an index generated using gentrome.v33.SIRV.ERCC.fa.gz and decoys.txt (can be found [here](https://uni-koeln.sciebo.de/s/RFID1U3YYBZmkkE)). A separate conda environment was created for Salmon. The following code was used for index generation: 
   ```

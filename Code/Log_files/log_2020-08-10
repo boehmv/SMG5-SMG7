@@ -1,0 +1,96 @@
+
+####################################################
+## Complete RNA-Seq Analysis [CRSA] Version 0.0.6 ##
+####################################################
+
+######################
+## General settings ##
+######################
+
+Reference used: gencode.v33.SIRVomeERCCome
+Sequencing design (paired/single): paired
+Name of the study: NMD
+Location of files on server: /srv/2020_03_NMD_VB
+Location of project folder: /home/volker/2020_03_NMD_VB
+Experiment file used for this analysis: /home/volker/2020_03_NMD_VB/experiment.txt
+
+############################
+## Conditions and samples ##
+############################
+
+cond0 	 control 	 A006200072_119952 A006200072_119954 A006200072_119956
+cond1 	 SMG5_KD 	 A006200072_119958 A006200072_119960 A006200072_119962
+cond2 	 SMG7_KO_2 	 A006200072_119964 A006200072_119966 A006200072_119968
+cond3 	 SMG7_KO_2_SMG5_KD 	 A006200072_119970 A006200072_119972 A006200072_119974
+cond4 	 SMG7_KO_2_SMG6_KD 	 A006200072_119976 A006200072_119978 A006200072_119980
+cond5 	 SMG7_KO_34 	 A006200072_119982 A006200072_119984 A006200072_119986
+cond6 	 SMG7_KO_34_SMG5_KD 	 A006200072_119988 A006200072_119990 A006200072_119992
+cond7 	 SMG7_KO_34_SMG6_KD 	 A006200072_119994 A006200072_119996 A006200072_119998
+
+######################
+## Analysis options ##
+######################
+
+STAR_enable (-M) = 
+Salmon_enable (-C) = true
+DESeq2_enable (-D) = 
+ISAR_enable (-I) = 
+leafcutter_enable (-L) = 
+IRFinder_enable (-i) = 
+QC_enable (-Q) = 
+
+
+###################
+## Perform salmon analysis
+###################
+
+Salmon version: salmon 1.3.0
+
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119952
+2020-08-10 08:38:40 Sample A006200072_119952 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119954
+2020-08-10 08:38:40 Sample A006200072_119954 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119956
+2020-08-10 08:38:40 Sample A006200072_119956 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119958
+2020-08-10 08:38:40 Sample A006200072_119958 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119960
+2020-08-10 08:38:40 Sample A006200072_119960 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119962
+2020-08-10 08:38:40 Sample A006200072_119962 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119964
+2020-08-10 08:38:40 Sample A006200072_119964 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119966
+2020-08-10 08:38:40 Sample A006200072_119966 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119968
+2020-08-10 08:38:40 Sample A006200072_119968 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119970
+2020-08-10 08:38:40 Sample A006200072_119970 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119972
+2020-08-10 08:38:40 Sample A006200072_119972 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119974
+2020-08-10 08:38:40 Sample A006200072_119974 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119976
+2020-08-10 08:38:40 Sample A006200072_119976 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119978
+2020-08-10 08:38:40 Sample A006200072_119978 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119980
+2020-08-10 08:38:40 Sample A006200072_119980 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119982
+2020-08-10 08:38:40 Sample A006200072_119982 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119984
+2020-08-10 08:38:40 Sample A006200072_119984 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119986
+2020-08-10 08:38:40 Sample A006200072_119986 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119988
+2020-08-10 08:38:40 Sample A006200072_119988 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119990
+2020-08-10 08:38:40 Sample A006200072_119990 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119992
+2020-08-10 08:38:40 Sample A006200072_119992 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119994
+2020-08-10 08:38:40 Sample A006200072_119994 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119996
+2020-08-10 08:38:40 Sample A006200072_119996 already analyzed
+2020-08-10 08:38:40 Start Salmon analysis A006200072_119998
+2020-08-10 08:38:40 Sample A006200072_119998 already analyzed

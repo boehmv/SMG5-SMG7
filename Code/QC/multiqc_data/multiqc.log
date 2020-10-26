@@ -1,0 +1,260 @@
+[2020-08-05 06:11:17,482] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/volker/miniconda3/lib/python3.7/site-packages/multiqc_config.yaml
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  Loading config settings from: /home/volker/.multiqc_config.yaml
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  New config 'title': General QC analysis
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  New config 'intro_text': MultiQC reports summarise FastQC, Salmon and STAR analysis results.
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  New config 'custom_logo': /home/volker/Tools/logo_big.png
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  New config 'custom_logo_url': http://www.uni-koeln.de/math-nat-fak/genetik/groups/Gehring/
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  New config 'custom_logo_title': Gehring Lab
+[2020-08-05 06:11:17,484] multiqc                                            [DEBUG  ]  New config 'report_header_info': [{'Contact E-mail': 'boehmv@uni-koeln.de'}]
+[2020-08-05 06:11:17,485] multiqc                                            [DEBUG  ]  New config 'run_modules': ['fastqc', 'salmon', 'star']
+[2020-08-05 06:11:17,485] multiqc                                            [DEBUG  ]  New config 'fn_ignore_dirs': ['_STARpass1']
+[2020-08-05 06:11:17,485] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2020-08-05 06:11:17,485] multiqc                                            [DEBUG  ]  Command used: /home/volker/miniconda3/bin/multiqc /home/volker/2020_03_NMD_VB/FASTQ /home/volker/2020_03_NMD_VB/Salmon /srv/2020_03_NMD_VB/NMD -v -f -o /home/volker/2020_03_NMD_VB/QC/ --sample-names /home/volker/2020_03_NMD_VB/Samples.txt
+[2020-08-05 06:11:17,730] multiqc                                            [WARNING]  MultiQC Version v1.9 now available!
+[2020-08-05 06:11:17,730] multiqc                                            [DEBUG  ]  Loading sample renaming config settings from: /home/volker/2020_03_NMD_VB/Samples.txt
+[2020-08-05 06:11:17,730] multiqc                                            [DEBUG  ]  Found 2 sample renaming patterns
+[2020-08-05 06:11:17,730] multiqc                                            [INFO   ]  This is MultiQC v1.8
+[2020-08-05 06:11:17,731] multiqc                                            [DEBUG  ]  Command     : /home/volker/miniconda3/bin/multiqc /home/volker/2020_03_NMD_VB/FASTQ /home/volker/2020_03_NMD_VB/Salmon /srv/2020_03_NMD_VB/NMD -v -f -o /home/volker/2020_03_NMD_VB/QC/ --sample-names /home/volker/2020_03_NMD_VB/Samples.txt
+[2020-08-05 06:11:17,731] multiqc                                            [DEBUG  ]  Working dir : /home/volker/2020_03_NMD_VB
+[2020-08-05 06:11:17,731] multiqc                                            [INFO   ]  Template    : default
+[2020-08-05 06:11:17,731] multiqc                                            [DEBUG  ]  Running Python 3.7.6 | packaged by conda-forge | (default, Jun  1 2020, 18:57:50)  [GCC 7.5.0]
+[2020-08-05 06:11:17,731] multiqc                                            [INFO   ]  Report title: General QC analysis
+[2020-08-05 06:11:17,731] multiqc                                            [INFO   ]  Searching   : /home/volker/2020_03_NMD_VB/FASTQ
+[2020-08-05 06:11:17,731] multiqc                                            [INFO   ]  Searching   : /home/volker/2020_03_NMD_VB/Salmon
+[2020-08-05 06:11:17,731] multiqc                                            [INFO   ]  Searching   : /srv/2020_03_NMD_VB/NMD
+[2020-08-05 06:11:17,731] multiqc                                            [INFO   ]  Only using modules fastqc, salmon, star
+[2020-08-05 06:11:17,731] multiqc                                            [DEBUG  ]  Analysing modules: salmon, star, fastqc
+[2020-08-05 06:11:17,732] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp6l_ofv2o
+[2020-08-05 06:11:17,817] multiqc                                            [DEBUG  ]  Ignored 199 search patterns as didn't match running modules.
+[2020-08-05 06:11:17,910] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119958/_STARpass1
+[2020-08-05 06:11:17,911] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119974/_STARpass1
+[2020-08-05 06:11:17,911] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119970/_STARpass1
+[2020-08-05 06:11:17,911] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119986/_STARpass1
+[2020-08-05 06:11:17,912] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119980/_STARpass1
+[2020-08-05 06:11:17,912] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119960/_STARpass1
+[2020-08-05 06:11:17,913] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119990/_STARpass1
+[2020-08-05 06:11:17,913] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119982/_STARpass1
+[2020-08-05 06:11:17,914] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119954/_STARpass1
+[2020-08-05 06:11:17,914] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119962/_STARpass1
+[2020-08-05 06:11:17,915] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119972/_STARpass1
+[2020-08-05 06:11:17,915] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119996/_STARpass1
+[2020-08-05 06:11:17,915] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119978/_STARpass1
+[2020-08-05 06:11:17,916] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119964/_STARpass1
+[2020-08-05 06:11:17,916] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119994/_STARpass1
+[2020-08-05 06:11:17,916] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119968/_STARpass1
+[2020-08-05 06:11:17,917] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119984/_STARpass1
+[2020-08-05 06:11:17,917] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119976/_STARpass1
+[2020-08-05 06:11:17,918] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119956/_STARpass1
+[2020-08-05 06:11:17,918] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119988/_STARpass1
+[2020-08-05 06:11:17,919] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119966/_STARpass1
+[2020-08-05 06:11:17,919] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119952/_STARpass1
+[2020-08-05 06:11:17,919] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119998/_STARpass1
+[2020-08-05 06:11:17,920] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_03_NMD_VB/NMD/BAM/A006200072_119992/_STARpass1
+[2020-08-05 06:11:17,923] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119972_1.fq.gz
+[2020-08-05 06:11:17,923] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119998_2.fq.gz
+[2020-08-05 06:11:17,923] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119968_2.fq.gz
+[2020-08-05 06:11:17,923] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119956_2.fq.gz
+[2020-08-05 06:11:17,923] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119964_2.fq.gz
+[2020-08-05 06:11:17,923] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119994_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119958_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119982_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119966_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119978_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119976_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119952_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119954_1.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119958_2.fq.gz
+[2020-08-05 06:11:17,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119984_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119968_1.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119960_1.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119962_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119976_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119972_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119954_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119980_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119990_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119988_2.fq.gz
+[2020-08-05 06:11:17,925] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119996_2.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119996_1.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119992_2.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119988_1.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119992_1.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119962_1.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119982_2.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119956_1.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119960_2.fq.gz
+[2020-08-05 06:11:17,926] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119998_1.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119980_1.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119978_2.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119986_1.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119970_1.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119990_1.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119994_2.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119952_2.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119970_2.fq.gz
+[2020-08-05 06:11:17,927] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119966_2.fq.gz
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119974_1.fq.gz
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119984_1.fq.gz
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119986_2.fq.gz
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119964_1.fq.gz
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119974_2.fq.gz
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119998_2_fastqc.html
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119954_1_fastqc.html
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119968_2_fastqc.html
+[2020-08-05 06:11:17,928] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119972_1_fastqc.html
+[2020-08-05 06:11:17,933] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119954_2_fastqc.html
+[2020-08-05 06:11:17,933] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119976_1_fastqc.html
+[2020-08-05 06:11:17,933] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119958_1_fastqc.html
+[2020-08-05 06:11:17,934] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119952_1_fastqc.html
+[2020-08-05 06:11:17,934] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119984_2_fastqc.html
+[2020-08-05 06:11:17,934] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119986_1_fastqc.html
+[2020-08-05 06:11:17,934] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119990_1_fastqc.html
+[2020-08-05 06:11:17,934] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119994_2_fastqc.html
+[2020-08-05 06:11:17,934] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119964_1_fastqc.html
+[2020-08-05 06:11:17,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119958_2_fastqc.html
+[2020-08-05 06:11:17,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119960_2_fastqc.html
+[2020-08-05 06:11:17,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119992_2_fastqc.html
+[2020-08-05 06:11:17,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119968_1_fastqc.html
+[2020-08-05 06:11:17,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119956_2_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119996_2_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119962_2_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119964_2_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119972_2_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119978_2_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119994_1_fastqc.html
+[2020-08-05 06:11:17,936] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119966_2_fastqc.html
+[2020-08-05 06:11:17,937] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119988_1_fastqc.html
+[2020-08-05 06:11:17,937] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119966_1_fastqc.html
+[2020-08-05 06:11:17,937] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119982_2_fastqc.html
+[2020-08-05 06:11:17,937] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119952_2_fastqc.html
+[2020-08-05 06:11:17,938] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119990_2_fastqc.html
+[2020-08-05 06:11:17,938] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119974_1_fastqc.html
+[2020-08-05 06:11:17,938] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119970_2_fastqc.html
+[2020-08-05 06:11:17,939] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119956_1_fastqc.html
+[2020-08-05 06:11:17,939] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119984_1_fastqc.html
+[2020-08-05 06:11:17,939] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119996_1_fastqc.html
+[2020-08-05 06:11:17,939] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119980_1_fastqc.html
+[2020-08-05 06:11:17,939] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119970_1_fastqc.html
+[2020-08-05 06:11:17,940] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119998_1_fastqc.html
+[2020-08-05 06:11:17,940] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119978_1_fastqc.html
+[2020-08-05 06:11:17,940] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119982_1_fastqc.html
+[2020-08-05 06:11:17,940] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119986_2_fastqc.html
+[2020-08-05 06:11:17,940] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119974_2_fastqc.html
+[2020-08-05 06:11:17,940] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119976_2_fastqc.html
+[2020-08-05 06:11:17,941] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119980_2_fastqc.html
+[2020-08-05 06:11:17,941] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119960_1_fastqc.html
+[2020-08-05 06:11:17,941] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119992_1_fastqc.html
+[2020-08-05 06:11:17,941] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119988_2_fastqc.html
+[2020-08-05 06:11:17,942] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200072_119962_1_fastqc.html
+[2020-08-05 06:11:19,360] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,360] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,361] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,420] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,420] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,420] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,435] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,435] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,435] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,481] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,482] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,482] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,501] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,501] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,502] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,537] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,558] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,601] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,602] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,602] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,617] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,617] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,618] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,638] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,638] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,638] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,649] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,649] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,650] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,674] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,674] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,675] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,681] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,681] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,681] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,683] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,683] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,683] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,696] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,697] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,697] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,710] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,711] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,711] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,719] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,720] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,720] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,721] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,721] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,722] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,730] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,731] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,731] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,754] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,754] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,754] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,759] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,772] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,772] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,773] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,797] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,797] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,797] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:19,798] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-08-05 06:11:19,799] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-08-05 06:11:19,799] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-08-05 06:11:20,039] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.1.1
+[2020-08-05 06:11:20,076] multiqc.modules.salmon.salmon                      [INFO   ]  Found 24 meta reports
+[2020-08-05 06:11:20,077] multiqc.modules.salmon.salmon                      [INFO   ]  Found 24 fragment length distributions
+[2020-08-05 06:11:20,195] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.1.1
+[2020-08-05 06:11:20,348] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119958
+[2020-08-05 06:11:20,429] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119974
+[2020-08-05 06:11:20,511] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119970
+[2020-08-05 06:11:20,607] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119986
+[2020-08-05 06:11:20,697] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119980
+[2020-08-05 06:11:20,765] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119960
+[2020-08-05 06:11:20,836] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119990
+[2020-08-05 06:11:20,906] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119982
+[2020-08-05 06:11:20,972] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119954
+[2020-08-05 06:11:21,043] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119962
+[2020-08-05 06:11:21,110] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119972
+[2020-08-05 06:11:21,176] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119996
+[2020-08-05 06:11:21,251] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119978
+[2020-08-05 06:11:21,317] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119964
+[2020-08-05 06:11:21,385] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119994
+[2020-08-05 06:11:21,455] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119968
+[2020-08-05 06:11:21,522] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119984
+[2020-08-05 06:11:21,591] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119976
+[2020-08-05 06:11:21,656] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119956
+[2020-08-05 06:11:21,722] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119988
+[2020-08-05 06:11:21,794] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119966
+[2020-08-05 06:11:21,861] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119952
+[2020-08-05 06:11:21,924] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119998
+[2020-08-05 06:11:21,994] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200072_119992
+[2020-08-05 06:11:21,994] multiqc.modules.star.star                          [INFO   ]  Found 24 reports and 24 gene count files
+[2020-08-05 06:11:31,523] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 48 reports
+[2020-08-05 06:11:32,101] multiqc                                            [INFO   ]  Compressing plot data
+[2020-08-05 06:11:33,045] multiqc                                            [INFO   ]  Report      : QC/multiqc_report.html
+[2020-08-05 06:11:33,045] multiqc                                            [INFO   ]  Data        : QC/multiqc_data
+[2020-08-05 06:11:33,045] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp6l_ofv2o/multiqc_data/multiqc_fastqc.txt' to '/home/volker/2020_03_NMD_VB/QC/multiqc_data'
+[2020-08-05 06:11:33,046] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp6l_ofv2o/multiqc_data/multiqc_data.json' to '/home/volker/2020_03_NMD_VB/QC/multiqc_data'
+[2020-08-05 06:11:33,050] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp6l_ofv2o/multiqc_data/multiqc_general_stats.txt' to '/home/volker/2020_03_NMD_VB/QC/multiqc_data'
+[2020-08-05 06:11:33,051] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp6l_ofv2o/multiqc_data/multiqc_star.txt' to '/home/volker/2020_03_NMD_VB/QC/multiqc_data'
+[2020-08-05 06:11:33,051] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp6l_ofv2o/multiqc_data/multiqc_salmon.txt' to '/home/volker/2020_03_NMD_VB/QC/multiqc_data'
+[2020-08-05 06:11:33,051] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp6l_ofv2o/multiqc_data/multiqc_sources.txt' to '/home/volker/2020_03_NMD_VB/QC/multiqc_data'
+[2020-08-05 06:11:33,155] multiqc                                            [INFO   ]  MultiQC complete

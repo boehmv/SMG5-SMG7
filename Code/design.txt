@@ -1,0 +1,17 @@
+# Indicate the reference name, respective indices, annotations, etc. need to be prepared before (Standard for human: gencode.v33.SIRVomeERCCome)
+reference="gencode.v33.SIRVomeERCCome"
+
+# Indicate whether reads are single- or paired-end (options: single, paired)
+seq_design="paired"
+
+# Give this a meaningful name (e.g. PSAP, NMD, ...)	
+myname="NMD"	
+
+# Give this folder a meaningful name (preferred: YEAR_MONTH_STUDY_NAME)
+srvdir="/srv/2020_03_NMD_VB"			
+
+# Give this folder a meaningful name (preferred: YEAR_MONTH_STUDY_NAME)
+mydir="/home/volker/2020_03_NMD_VB"	
+
+# This experiment.txt file has two tab-delimited columns: sample name and condition. IMPORTANT: Condition 1 always has to be "control"	
+experiment_file="${mydir}/experiment.txt"		

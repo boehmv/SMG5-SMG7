@@ -1,0 +1,37 @@
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 18.04.4 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.7.1
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.7.1
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] cowplot_1.0.0        extrafont_0.17       circlize_0.4.10     
+ [4] RColorBrewer_1.1-2   ComplexHeatmap_2.4.3 ggrepel_0.8.2       
+ [7] ggplot2_3.3.2        limma_3.44.3         dplyr_1.0.1         
+[10] optparse_1.6.6      
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.5          pillar_1.4.6        compiler_4.0.2     
+ [4] digest_0.6.25       lifecycle_0.2.0     tibble_3.0.3       
+ [7] gtable_0.3.0        clue_0.3-57         pkgconfig_2.0.3    
+[10] png_0.1-7           rlang_0.4.7         parallel_4.0.2     
+[13] Rttf2pt1_1.3.8      withr_2.2.0         cluster_2.1.0      
+[16] generics_0.0.2      vctrs_0.3.2         GlobalOptions_0.1.2
+[19] getopt_1.20.3       tidyselect_1.1.0    glue_1.4.1         
+[22] R6_2.4.1            GetoptLong_1.0.2    farver_2.0.3       
+[25] extrafontdb_1.0     purrr_0.3.4         magrittr_1.5       
+[28] scales_1.1.1        ellipsis_0.3.1      shape_1.4.4        
+[31] colorspace_1.4-1    labeling_0.3        munsell_0.5.0      
+[34] crayon_1.3.4        rjson_0.2.20       

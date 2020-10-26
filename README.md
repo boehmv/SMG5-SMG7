@@ -2,6 +2,8 @@
 ___
 Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__
 
+## Graphical abstract
+
 <img src="https://github.com/boehmv/SMG5-SMG7/blob/main/2FA.png?raw=true" max-height="300">
 
 ## Features / Requirements

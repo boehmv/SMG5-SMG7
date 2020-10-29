@@ -356,7 +356,7 @@ for i in "${samples[@]}"; do
     mytime=$(date "+%Y-%m-%d %H:%M:%S")
     echo "$mytime ${i} BAM file already generated"
   else
-    # Mostly configuration used by Thiago Britto-Borges
+    # Configure individual parameters depending on project type!
     STAR \
     --runThreadN 15 \
     --quantMode GeneCounts \

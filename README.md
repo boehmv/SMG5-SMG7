@@ -1,14 +1,23 @@
-# RNA-seq analysis of SMG5-SMG7 in NMD
+# RNA-seq analysis of SMG5-SMG7 in nonsense-mediated mRNA decay (NMD)
 ___
-Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__
+Code and scripts for the RNA-seq analysis of the project: [__Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__](https://doi.org/10.1101/2020.07.07.191437)
 
 ## Graphical abstract
 
 <img src="https://github.com/boehmv/SMG5-SMG7/blob/main/2FA.png?raw=true" max-height="300">
 
+## Scope
+This repository primarily aims to provide transparent insight into the RNA-seq analysis steps used in the study of SMG5-SMG7 in NMD. **NOTE:** The complete pipeline is currently not optimized to run on different computing infrastructures in a standardized/portable manner
+
 ## Features / Requirements
-* Complete analysis of RNA-seq data (ArrayExpress: [E-MTAB-9330](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9330/); provided in FASTQ format), mapped to Gencode v33 / GRCh38.primary_assembly supplemented with SIRVomeERCCome (from Lexogen) using STAR, followed by transcript quantification using Salmon in mapping-based mode with a decoy-aware transcriptome index, finished with analyses of differential gene expression (DGE) via DESeq2, differential transcript usage (DTU) via IsoformSwitchAnalyzeR, alternative splicing (AS) via LeafCutter and intron retention (IR) via IRFinder.
-* The main Bash script [CRSA_V006.sh](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/CRSA_V006.sh) requires a design file specifying reference type, sequencing design (single- ,paired-end), study name, folder locations (srvdir for raw file locations, mydir for analyses output) and location of the experiment file. Please see the provided [design.txt](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/design.txt) file example for more information. The tab-delimited [experiment.txt](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/experiment.txt) file specifies sample name and condition. Please see the comments in CRSA_V006.sh for further help or run CRSA_V006.sh -h 
+* Complete analysis of RNA-seq data (ArrayExpress: [E-MTAB-9330](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9330/); provided in FASTQ format; see [here](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/E-MTAB-9330_sample_IDs) for ID cross-reference), mapped to [Gencode v33](https://www.gencodegenes.org/human/release_33.html) / GRCh38.primary_assembly supplemented with SIRVomeERCCome (from Lexogen; [download](https://www.lexogen.com/wp-content/uploads/2018/08/SIRV_Set3_Sequences_170612a-ZIP.zip)) using STAR, followed by transcript quantification using Salmon in mapping-based mode with a decoy-aware transcriptome index, finished with analyses of differential gene expression (DGE) via DESeq2, differential transcript usage (DTU) via IsoformSwitchAnalyzeR, alternative splicing (AS) via LeafCutter and intron retention (IR) via IRFinder
+* The main Bash script [CRSA_V006.sh](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/CRSA_V006.sh) runs the complete pipeline or individual modules using the options (see CRSA_V006.sh -h) and requires a design file specifying the following:
+  * reference type (gencode.v33.SIRVomeERCCome was used in this study)
+  * sequencing design (single- or paired-end reads)
+  * study name
+  * folder locations (srvdir for raw file locations, mydir for analyses output)
+  * location of the experiment file which specifies sample IDs and condition
+* Please see the provided [design.txt](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/design.txt) file example for more information concerning this design file. An example for the tab-delimited [experiment.txt](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/experiment.txt) file is provided as well. Please see the comments in CRSA_V006.sh for further instructions 
 * To run/reproduce the complete analysis script, please make sure you have the following tools installed and configured if required:
   * [STAR](https://github.com/alexdobin/STAR) - version 2.7.3a was used for the analyses - with genome indices generated using GRCh38.primary.SIRVomeERCCome.fa and gencode.v33.SIRVomeERCCome.annotation.gtf (both reference files can be found [here](https://uni-koeln.sciebo.de/s/RFID1U3YYBZmkkE)). The following code was used for genome index generation: 
   ```
@@ -22,8 +31,8 @@ Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mR
   salmon index -t /home/volker/reference/Gencode/gentrome.v33.SIRV.ERCC.fa.gz -d /home/volker/reference/Gencode/decoys.txt -p 12 -i /home/volker/reference/Transcriptome/gencode.v33.SIRVomeERCCome --gencode
   ```
   * [DESeq2](https://github.com/mikelove/DESeq2) - version 1.28.1 was used for the analyses - please see [R_sessions](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions) for details on R version and other installed packages. The tx2gene file used for the analyses can be found [here](https://uni-koeln.sciebo.de/s/RFID1U3YYBZmkkE)
-  * [IsoformSwitchAnalyzeR](https://github.com/kvittingseerup/IsoformSwitchAnalyzeR) - version 1.10.0 was used for the analyses - please see [R_sessions](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions) for details on R version and other installed packages.
-  * [LeafCutter](https://github.com/davidaknowles/leafcutter) - version v0.2.7 was used for the analyses - please see [R_sessions](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions) for details on R version and other installed packages. **NOTE:** small changes in the /scripts of LeafCutter maintained gene IDs from Gencode (changed in [gtf_to_exons_vb.R](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/Tools/leafcutter/scripts/gtf_to_exons_vb.R) and [leafcutter_ds.R](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/Tools/leafcutter/scripts/leafcutter_ds.R)
+  * [IsoformSwitchAnalyzeR](https://github.com/kvittingseerup/IsoformSwitchAnalyzeR) - version 1.10.0 was used for the analyses - please see [R_sessions](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions) for details on R version and other installed packages
+  * [LeafCutter](https://github.com/davidaknowles/leafcutter) - version v0.2.7 was used for the analyses - please see [R_sessions](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions) for details on R version and other installed packages. **NOTE:** small changes in the /scripts of LeafCutter maintained gene IDs from Gencode (changed in [gtf_to_exons_vb.R](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/Tools/leafcutter/scripts/gtf_to_exons_vb.R) and [leafcutter_ds.R](https://github.com/boehmv/SMG5-SMG7/blob/main/Code/Tools/leafcutter/scripts/leafcutter_ds.R))
   * [IRFinder](https://github.com/williamritchie/IRFinder) - version 1.2.6 was used for the analyses - **NOTE:** IRFinder results were not used in the publication
   * [FastQC](https://github.com/s-andrews/FastQC) - version 0.11.9 was used for the analyses
   * [MultiQC](https://github.com/ewels/MultiQC) - version v1.8  was used for the analyses
@@ -34,13 +43,13 @@ Code and scripts for the RNA-seq analysis of the project: __Nonsense-mediated mR
 Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/Log_files) to access the log files from the complete analysis (run between 04.08.2020 - 10.08.2020)
 
 ## Quality control
-Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/QC) to access the MultiQC result file for all samples
+Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/QC) to access the MultiQC result file for all samples, summarizing the FastQC, Salmon and STAR output
 
 ## R_sessions
 Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/R_sessions) to access the session info for the individual R scripts
 
 ## Individual scripts
-The specialized scripts called by the main CRSA_V006.sh script can be found [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/Tools). 
+The specialized scripts called by the main CRSA_V006.sh script can be found [here](https://github.com/boehmv/SMG5-SMG7/tree/main/Code/Tools).
 
 ## Feedback / Questions
 Feedback is welcome! For any question, please email: boehmv@uni.koeln.de or [create an issue](https://github.com/boehmv/SMG5-SMG7/issues)

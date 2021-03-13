@@ -38,6 +38,7 @@ This repository primarily aims to provide transparent insight into the RNA-seq a
   * [MultiQC](https://github.com/ewels/MultiQC) - version v1.8  was used for the analyses
 * All analyses were performed on a 16-core (2x Intel(R) Xeon(R) CPU E5-2687W v2 @ 3.40GHz) workstation with 128 GB RAM running Ubuntu 18.04.4 LTS
 * Please make sure to change installation and file paths in the respective scripts to match your local environment
+* :information_source: Different package versions were previously used for the analyses in the bioRxiv preprint, this repository contains the revised scripts and information 
 
 ## Log files
 Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/doc/log_files) to access the log files from the complete analysis (run between 04.08.2020 - 10.08.2020)

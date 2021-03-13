@@ -2,6 +2,8 @@
 ___
 This repository contains the code, scripts and log files for the RNA-seq analysis of the project: [__Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__](https://doi.org/10.1101/2020.07.07.191437) (currently available as preprint at bioRxiv)
 
+[![DOI](https://zenodo.org/badge/307416667.svg)](https://zenodo.org/badge/latestdoi/307416667)
+
 ## Graphical abstract
 
 <img src="https://github.com/boehmv/SMG5-SMG7/blob/main/doc/2FA.png?raw=true" max-height="300">

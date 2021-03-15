@@ -46,7 +46,7 @@ This repository primarily aims to provide transparent insight into the RNA-seq a
 Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/doc/log_files) to access the log files from the complete analysis (run between 04.08.2020 - 10.08.2020)
 
 ## Quality control
-Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/doc/RNAseq_QC) to access the MultiQC HTML result file for all samples, summarizing the FastQC, Salmon and STAR output. Please download the HTML file and corresponding to data to view the MultiQC report properly.
+Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/doc/RNAseq_QC) to access the MultiQC HTML result file for all samples, summarizing the FastQC, Salmon and STAR output. Please download the HTML file and corresponding data to view the MultiQC report properly.
 
 ## R_sessions
 Please see [here](https://github.com/boehmv/SMG5-SMG7/tree/main/doc/R_sessions) to access the session info for the individual R scripts

@@ -1,18 +1,18 @@
-# RNA-seq analysis for: <br/> Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7
+# RNA-Seq analysis for: <br/> Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7
 ___
-This repository contains the code, scripts and log files for the RNA-seq analysis of the project: [__Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__](https://doi.org/10.1101/2020.07.07.191437) (currently available as preprint at bioRxiv)
+This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: [__Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__](https://doi.org/10.1101/2020.07.07.191437) (currently available as preprint at bioRxiv)
 
 [![DOI](https://zenodo.org/badge/307416667.svg)](https://zenodo.org/badge/latestdoi/307416667)
 
 ## Graphical abstract
 
-<img src="https://github.com/boehmv/SMG5-SMG7/blob/main/doc/2FA.png?raw=true" max-height="300">
+<img src="https://github.com/boehmv/SMG5-SMG7/blob/main/doc/2FA2.png?raw=true" max-height="300">
 
 ## Scope
-This repository primarily aims to provide transparent insight into the RNA-seq analysis steps used in the study of SMG5-SMG7 in NMD. :warning: **NOTE:** The complete pipeline is currently not optimized to run on different computing infrastructures in a standardized/portable manner. This mean that all required packages have to be installed manually and configured accordingly to reproduce the results.
+This repository primarily aims to provide transparent insight into the RNA-Seq analysis steps used in the study of SMG5-SMG7 in NMD. :warning: **NOTE:** The complete pipeline is currently not optimized to run on different computing infrastructures in a standardized/portable manner. This mean that all required packages have to be installed manually and configured accordingly to reproduce the results.
 
 ## Features / Requirements
-* Complete analysis of RNA-seq data (ArrayExpress: [E-MTAB-9330](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9330/); provided in FASTQ format; see [here](https://github.com/boehmv/SMG5-SMG7/blob/main/tools/E-MTAB-9330_sample_IDs) for ID cross-reference), mapped to [Gencode v33](https://www.gencodegenes.org/human/release_33.html) / GRCh38.primary_assembly supplemented with SIRVomeERCCome (from Lexogen; [download](https://www.lexogen.com/wp-content/uploads/2018/08/SIRV_Set3_Sequences_170612a-ZIP.zip)) using STAR, followed by transcript quantification using Salmon in mapping-based mode with a decoy-aware transcriptome index, finished with analyses of differential gene expression (DGE) via DESeq2, differential transcript usage (DTU) via IsoformSwitchAnalyzeR, alternative splicing (AS) via LeafCutter and intron retention (IR) via IRFinder
+* Complete analysis of RNA-Seq data (ArrayExpress: [E-MTAB-9330](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9330/); provided in FASTQ format; see [here](https://github.com/boehmv/SMG5-SMG7/blob/main/tools/E-MTAB-9330_sample_IDs) for ID cross-reference), mapped to [Gencode v33](https://www.gencodegenes.org/human/release_33.html) / GRCh38.primary_assembly supplemented with SIRVomeERCCome (from Lexogen; [download](https://www.lexogen.com/wp-content/uploads/2018/08/SIRV_Set3_Sequences_170612a-ZIP.zip)) using STAR, followed by transcript quantification using Salmon in mapping-based mode with a decoy-aware transcriptome index, finished with analyses of differential gene expression (DGE) via DESeq2, differential transcript usage (DTU) via IsoformSwitchAnalyzeR, alternative splicing (AS) via LeafCutter and intron retention (IR) via IRFinder
 * The main Bash script [CRSA_V006.sh](https://github.com/boehmv/SMG5-SMG7/blob/main/CRSA_V006.sh) runs the complete pipeline or individual modules using the options (see CRSA_V006.sh -h) and requires a design file specifying the following:
   * reference type (gencode.v33.SIRVomeERCCome was used in this study)
   * sequencing design (single- or paired-end reads)

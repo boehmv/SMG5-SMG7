@@ -1,6 +1,6 @@
-# RNA-Seq analysis for: <br/> Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7
+# RNA-Seq analysis for: <br/> SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity
 ___
-This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: [__Nonsense-mediated mRNA decay relies on "two-factor authentication" by SMG5-SMG7__](https://doi.org/10.1101/2020.07.07.191437) (currently available as preprint at bioRxiv)
+This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: [__SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity__](https://doi.org/10.1101/2020.07.07.191437) (currently available as preprint at bioRxiv)
 
 [![DOI](https://zenodo.org/badge/307416667.svg)](https://zenodo.org/badge/latestdoi/307416667)
 

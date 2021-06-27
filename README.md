@@ -1,8 +1,15 @@
 # RNA-Seq analysis for: <br/> SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity
 ___
-This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: [__SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity__](https://doi.org/10.1101/2020.07.07.191437) (currently available as preprint at bioRxiv)
+This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: <br/> [__SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity__](https://doi.org/10.1038/s41467-021-24046-3) <br/> (available as bioRxiv preprint and now published in Nature Communications)
 
-[![DOI](https://zenodo.org/badge/307416667.svg)](https://zenodo.org/badge/latestdoi/307416667)
+Journal article:  
+[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41467--021--24046--3-red)](https://doi.org/10.1038/s41467-021-24046-3)  
+Preprint:  
+[![DOI](https://img.shields.io/badge/DOI-10.1101%2F2020.07.07.191437-red)](https://doi.org/10.1101/2020.07.07.191437)  
+Zenodo release:  
+[![DOI](https://zenodo.org/badge/307416667.svg)](https://zenodo.org/badge/latestdoi/307416667)  
+Source data:  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4603279.svg)](https://doi.org/10.5281/zenodo.4603279)
 
 ## Graphical abstract
 
@@ -58,5 +65,10 @@ The specialized scripts called by the main CRSA_V006.sh script can be found [her
 Feedback is welcome! For any question, please email: boehmv@uni.koeln.de or [create an issue](https://github.com/boehmv/SMG5-SMG7/issues)
 
 ## Citation
+### Journal article
+Volker Boehm, Sabrina Kueckelmann, Jennifer V Gerbracht, Sebastian Kallabis, Thiago Britto-Borges, Janine Altmüller, Marcus Krüger, Christoph Dieterich and Niels H Gehring (2021) __SMG5-SMG7 authorize nonsense-mediated mRNA decay by enabling SMG6 endonucleolytic activity__.
+Nat Commun 2021 Jun 25;12(1):3965; doi: https://doi.org/10.1038/s41467-021-24046-3
+
+### bioRxiv preprint
 Volker Boehm, Sabrina Kueckelmann, Jennifer V. Gerbracht, Thiago Britto-Borges, Janine Altmüller, Christoph Dieterich and Niels H. Gehring (2020) __Nonsense-mediated mRNA decay relies on “two-factor authentication” by SMG5-SMG7__. 
 bioRxiv 2020.07.07.191437; doi: https://doi.org/10.1101/2020.07.07.191437

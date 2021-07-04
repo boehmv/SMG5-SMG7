@@ -7,9 +7,9 @@ Journal article:
 Preprint:  
 [![DOI](https://img.shields.io/badge/DOI-10.1101%2F2020.07.07.191437-red)](https://doi.org/10.1101/2020.07.07.191437)  
 Zenodo release:  
-[![DOI](https://zenodo.org/badge/307416667.svg)](https://zenodo.org/badge/latestdoi/307416667)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4603389.svg)](https://doi.org/10.5281/zenodo.4603389)  
 Source data:  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4603279.svg)](https://doi.org/10.5281/zenodo.4603279)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4603279.svg)](https://doi.org/10.5281/zenodo.4603279)  
 
 ## Graphical abstract
 
